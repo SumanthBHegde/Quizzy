@@ -8,7 +8,7 @@ A modern, interactive quiz application built with React and Vite. Create and dis
 
 ## 🚀 Live Demo
 
-Visit the live app: [Quiz Formator on GitHub Pages](https://YOUR_USERNAME.github.io/Quiz-Formator/)
+Visit the live app: [Quiz Formator on GitHub Pages](https://sumanthbhegde.github.io/Quizzy/)
 
 ## ✨ Features
 
