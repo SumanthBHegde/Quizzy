@@ -1,0 +1,5 @@
+{
+  "name": "Quiz Master & Converter",
+  "description": "A comprehensive tool for generating interactive quizzes from Markdown and answer keys, featuring a standalone quiz player.",
+  "requestFramePermissions": []
+}
