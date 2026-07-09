@@ -1,145 +1,47 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# QuizMaster: Markdown to Interactive Quiz
 
-# Quiz Formator
+A front-end tool that turns plain Markdown question sets (plus an answer key) into a polished,
+interactive quiz you can take in the browser, with instant correct/incorrect feedback and a
+one-click export to a standalone HTML quiz.
 
-A modern, interactive quiz application built with React and Vite. Create and display technical quizzes with real-time feedback and a beautiful UI.
+Built with **React + Vite + TypeScript**, `motion/react` for animation, and `lucide-react` icons.
 
-## 🚀 Live Demo
+## Screenshots
 
-Visit the live app: [Quiz Formator on GitHub Pages](https://sumanthbhegde.github.io/Quizzy/)
+### Interactive Quiz (Preview)
+Generated questions rendered as clean cards with selectable options and per-question
+**Check Answer** scoring.
 
-## ✨ Features
+![Interactive quiz](./screenshots/01-quiz.png)
 
-- 📝 Interactive multiple-choice quiz interface
-- ✅ Instant answer checking with visual feedback
-- 🎨 Modern, responsive design
-- 🚀 Fast performance with Vite
-- 📱 Mobile-friendly interface
+### Answer feedback
+Selecting an option and checking it highlights the correct choice in green with a
+**Correct!** / incorrect indicator.
 
-## 🛠️ Run Locally
+![Answer feedback](./screenshots/03-answered.png)
 
-**Prerequisites:** Node.js (v16 or higher)
+### Markdown Converter
+Paste **Quiz Markdown** and an **Answer Key**, hit *Generate Interactive Quiz*, and the app
+parses them into the playable quiz. Includes a format guide and **Download Standalone HTML
+Quiz** export.
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/Quiz-Formator.git
-   cd Quiz-Formator
-   ```
+![Markdown converter](./screenshots/02-converter.png)
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+## Markdown format
 
-3. **Run the development server:**
-   ```bash
-   npm run dev
-   ```
+```
+**1. Your question?**
+- A) Option one
+- B) Option two
+- C) Option three
+- D) Option four
+```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+Answer key: `1. B | 2. C | 3. A` (separated by `|` or newlines).
 
-## 📦 Build for Production
+## Running locally
 
 ```bash
-npm run build
+npm install
+npm run dev
 ```
-
-The built files will be in the `dist/` directory.
-
-## 🌐 Deploy to GitHub Pages
-
-### First-Time Setup
-
-1. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-2. **Initialize Git repository (if not already done):**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   ```
-
-3. **Create a GitHub repository** named `Quiz-Formator` (or your preferred name)
-
-4. **Add remote and push:**
-   ```bash
-   git remote add origin https://github.com/YOUR_USERNAME/Quiz-Formator.git
-   git branch -M main
-   git push -u origin main
-   ```
-
-5. **Deploy to GitHub Pages:**
-   ```bash
-   npm run deploy
-   ```
-
-### Subsequent Deployments
-
-After making changes, simply run:
-```bash
-npm run deploy
-```
-
-This will:
-- Build your project
-- Push the built files to the `gh-pages` branch
-- Automatically update your live site
-
-### Configure GitHub Pages
-
-1. Go to your repository on GitHub
-2. Navigate to **Settings** → **Pages**
-3. Under "Source", select the `gh-pages` branch
-4. Click **Save**
-5. Your site will be live at `https://YOUR_USERNAME.github.io/Quiz-Formator/`
-
-## 📁 Project Structure
-
-```
-Quiz-Formator/
-├── src/
-│   ├── App.tsx          # Main React component
-│   ├── main.tsx         # Application entry point
-│   ├── index.css        # Global styles
-│   └── md_to_quiz.js    # Quiz conversion utilities
-├── index.html           # HTML template
-├── quiz.html            # Standalone quiz HTML
-├── package.json         # Dependencies and scripts
-├── vite.config.ts       # Vite configuration
-└── tsconfig.json        # TypeScript configuration
-```
-
-## 🔧 Technologies Used
-
-- **React 19** - UI framework
-- **TypeScript** - Type safety
-- **Vite** - Build tool and dev server
-- **Tailwind CSS** - Styling
-- **Lucide React** - Icons
-
-## 📝 Scripts
-
-| Script | Description |
-|--------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build |
-| `npm run deploy` | Deploy to GitHub Pages |
-| `npm run lint` | Run TypeScript type checking |
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to open an issue or submit a pull request.
-
-## 📄 License
-
-MIT License - feel free to use this project for your own purposes.
-
----
-
-Made with ❤️ using React and Vite
